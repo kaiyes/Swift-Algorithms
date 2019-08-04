@@ -1,7 +1,11 @@
 import UIKit
 
 //###########  Data types #################
-
+let str = "Today my friends kid died. She was "
+let age = 5
+let daysInHospital = 3
+print(str+String(age))
+print("She died after being in the hospital for \(daysInHospital) days")
 //########### func #################
 
 func addNum(num1: Int, num2: Int) -> Int {
