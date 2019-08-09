@@ -29,9 +29,14 @@ for char in arr {
 }
 
 //###########  Switch #################
+let number = 110
 
+switch number {
+case 110:
+    print("Number is 110")
+default:
+    print("Otherwise, do something else.")
+}
 //###########  Object #################
-
-//###########  Class #################
 
 //###########  Class #################
