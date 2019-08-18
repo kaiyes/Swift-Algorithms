@@ -1,6 +1,11 @@
 import UIKit
 // print needs double " instead of '
 print("print needs double")
+pow(2, 2)
+print(2*2*2)
+sqrt(4)
+ceil(4.2)
+floor(4.2)
 
 //###########  Data types #################
 let str = "Today my friends kid died. She was "
