@@ -1,6 +1,6 @@
 import UIKit
 // print needs double " instead of '
-print("nothing")
+print("print needs double")
 
 //###########  Data types #################
 let str = "Today my friends kid died. She was "
