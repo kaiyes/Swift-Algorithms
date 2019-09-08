@@ -1,19 +1,23 @@
 import UIKit
 
-//###########  Data types #################
-let str = "Today my friends kid died. She was"
-let age = 5
-let daysInHospital = 3
-print(str,String(age))
-print("She died after being in the hospital for \(daysInHospital) days")
-
-
 //########### func #################
 func addNum(num1: Int, num2: Int) -> Int {
     return num1+num2
 }
 let data = addNum(num1: 100, num2: 11)
 print(data)
+
+//inference issues
+
+
+//###########  Data types #################
+let str = "Today my friends kid died. She was"
+let age = 5
+let daysInHospital = 3
+print(str,age)
+print(str,String(age))
+print("She died after being in the hospital for \(daysInHospital) days")
+
 
 
 //###########  Switch #################
