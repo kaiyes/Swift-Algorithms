@@ -1,6 +1,6 @@
 import UIKit
 
-for char in 1...15 {
+for char in 1...10 {
     if char % 3 == 0 && char % 5 == 0 {
         print("fizzBuzz")
     } else if (char % 5 == 0) {
