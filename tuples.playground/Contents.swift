@@ -27,3 +27,18 @@ var day1 = date_tuples.d
 var (day, _, _, emo ) = date_tuples
 date_tuples.d = 21
 print(date_tuples)
+
+
+/* ================= Date ========================== */
+let t = (month: 10, day: 30, year:2019, feeling: "determined")
+let (mo,da,ye,emot) = t
+mo
+da
+ye
+emot
+let (day2, _, _, em ) = t
+day2
+em
+var t2 = (month: 10, day: 30, year:2019, feeling: "determined")
+t2.day = 19
+t2
