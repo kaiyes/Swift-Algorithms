@@ -40,17 +40,17 @@ default:
 
 // tuples in cases && exhaustive example
 
-let coordinates = (2,0)
+let newCoordinate = (2,0)
 let onWhere: String
 
-switch coordinates {
+switch newCoordinate {
 case (0,0):
     print("on origin")
 case (_ , 0):
     print("on x axis")
 case (0, _):
     print("on y axis")
-case _ where coordinates.0 == coordinates.1:
+case _ where newCoordinate.0 == newCoordinate.1:
     onWhere = "x = y"
     print("x = y")
 case let (x,y):
