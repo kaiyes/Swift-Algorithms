@@ -1,7 +1,10 @@
 import UIKit
 
+
+//ranged case, clauses in cases
+
 let num = 3
-//let BigNum = Int.max
+// Int.max
 
 switch num {
 case 1:
@@ -16,9 +19,43 @@ default:
     print("Nothing matched")
 }
 
+// gotta be exhaustive
 switch num % 2 {
 case 0:
     print("number is even")
 default:
-    print("number is odd")  // using default to exhaust options
+    print("number is odd")  // using default to exhaust options || better to use a ternery in this case though
 }
+
+
+// combined case
+let str = "dog"
+
+switch str {
+case "cat", "dog", "3":
+    print("string val is 3 || Dog || Cat")
+default:
+    print("nothing matched")
+}
+
+// tuples in cases && exhaustive example
+
+let coordinates = (2,0)
+let onWhere: String
+
+switch coordinates {
+case (0,0):
+    print("on origin")
+case (_ , 0):
+    print("on x axis")
+case (0, _):
+    print("on y axis")
+case _ where coordinates.0 == coordinates.1:
+    onWhere = "x = y"
+    print("x = y")
+case let (x,y):
+    onWhere = "no zero coordinate,  x=\(x), y= \(y)"
+    print("no zero coordinate,  x=\(x), y= \(y)")
+
+}
+
