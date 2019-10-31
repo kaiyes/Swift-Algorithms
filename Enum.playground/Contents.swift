@@ -4,7 +4,7 @@ enum Day {
     case sat,sun,mon,tue,wed,thu,fri
 }
 
-let jumua: Day = .fri
+//let rightDay: Day = .fri
 
 enum Time {
     /// Nice time for quran
@@ -15,5 +15,15 @@ enum Time {
     case afterAsr
 }
 
-let rightTime: Time = .afterAsr
+let rightTime: Time
+let rightDay: Day = .mon
+
+switch rightDay {
+case .fri:
+    rightTime = .afterAsr
+case .sat,.sun,.mon,.tue,.wed,.thu:
+    rightTime = .beforeFajr
+}
+
+
 
