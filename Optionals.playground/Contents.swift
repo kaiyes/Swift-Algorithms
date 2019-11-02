@@ -32,3 +32,15 @@ if let name = name, let age=age {
 } else {
     print("no name provided")
 }
+
+// Guard Statement
+func testGuard(name: String?, age:Int?) {
+    guard let name = name, let age = age else {
+        print("guard works")
+        return
+    }
+    print(name, age)
+}
+
+testGuard(name: "Turgut", age: nil)
+testGuard(name: "Turgut", age: 38)
