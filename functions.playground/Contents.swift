@@ -47,3 +47,31 @@ func testOverLoading (_ thirdParam: String) {
 }
 
 testOverLoading("print me")
+
+func getVal() -> Int {
+    return 34
+}
+
+func getVal() -> String {
+    return "la la ?"
+}
+
+//compiler complains
+//getVal()
+
+//compiler understands
+let valInt: Int = getVal()
+
+//type Alias
+func add(num1: Int, num2: Int) -> Int {
+    return num1 - num2
+}
+
+typealias Operate = (Int, Int) -> Int
+
+func printResult(_ operation: Operate, a: Int, b: Int) {
+    let result = operation(a,b)
+    print(result)
+}
+
+printResult(add, a: 21, b: 1)
