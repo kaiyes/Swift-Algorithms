@@ -10,9 +10,17 @@ func dualParam (a:Int=1,b:String) {
 
 dualParam(b:"imagine that !")
 
+// no extrenal name, showed by the use of _
 func multiply(_ factor1: Int, _ factor2:Int) -> Int {
     return factor1*factor2
 }
+
+// with external name
+func printOut(salary param1:Int, currency param2:String) {
+   print ("salary is \(param1) \(param2)")
+}
+
+printOut(salary: 2500, currency: "Dollar")
 
 multiply(2,3)
 

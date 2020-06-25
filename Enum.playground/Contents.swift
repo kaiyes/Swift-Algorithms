@@ -15,6 +15,7 @@ enum Time {
     case afterAsr
 }
 
+let goodTime: Time = .afterJumuah
 let rightTime: Time
 let rightDay: Day = .mon
 
@@ -25,5 +26,8 @@ case .sat,.sun,.mon,.tue,.wed,.thu:
     rightTime = .beforeFajr
 }
 
+goodTime
+rightDay
+rightTime
 
 

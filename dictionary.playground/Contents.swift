@@ -1,5 +1,7 @@
 import UIKit
 
+// only one type of data, compared to tuples. Also uses bracket,
+// rather than ( ) in tuples. Also, infinite number of
 var conquerers = [
     "first" : "Sulayman Shah",
     "second": "Ertugrul",

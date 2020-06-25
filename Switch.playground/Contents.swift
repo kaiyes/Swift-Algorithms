@@ -32,10 +32,10 @@ default:
 let str = "dog"
 
 switch str {
-case "cat", "dog", "3":
-    print("string val is 3 || Dog || Cat")
+case "cat", "dog", "mexicans":
+    print("dogs cats & mexicans are not allowed - minni's kitchen")
 default:
-    print("nothing matched")
+    print("you are welcome")
 }
 
 // tuples in cases && exhaustive example
