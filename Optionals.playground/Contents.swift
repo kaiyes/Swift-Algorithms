@@ -8,6 +8,7 @@ name = "kaiyes"
 print(name!)
 
 //will break app as value is nill
+// name = nil
 //print(name!)
 
 // ............. Optional Binding ..............
@@ -29,11 +30,23 @@ if let name = name, let age=age {
 
 //both value != nil
 name = "Ertugul"
+age = 40
 if let name = name, let age=age {
     print(name, age)
 } else {
     print("no name provided")
 }
+
+// optional chaining
+name?.count
+
+// ............. Nil coalescing ..............
+//if has value, prints name else prints whats after ??
+name = "kk"
+var nulName : String?
+print(name ?? "next man")
+print(nulName ?? "it was nil")
+nulName?.count
 
 // ............. guard Statement ..............
 func testGuard(name: String?, age:Int?) {
@@ -47,6 +60,4 @@ func testGuard(name: String?, age:Int?) {
 testGuard(name: "Turgut", age: nil)
 testGuard(name: "Turgut", age: 38)
 
-// ............. Nil coalescing ..............
-name = nil
-print(name ?? "next man")
+

@@ -7,11 +7,8 @@ enum Day {
 //let rightDay: Day = .fri
 
 enum Time {
-    /// Nice time for quran
     case beforeFajr
-    /// Time for resting
     case afterJumuah
-    /// time for making dua
     case afterAsr
 }
 
